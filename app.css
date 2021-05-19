@@ -37,7 +37,7 @@ p {
 
 /* Grid Styles */
 #grid {
-    background: #fff url(images/tracks.png) no-repeat;
+    /*background: #fff url(images/tracks.png) no-repeat;*/
     background-size: cover;
     display: flex;
     margin: 2em;
@@ -49,43 +49,44 @@ p {
     position: relative;
     box-sizing: border-box;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
-.grid-item:nth-child(1){
-    background: #009687f5;
-}
+/*.grid-item:nth-child(1){*/
+/*    background: #009687f5;*/
+/*}*/
 
-.grid-item:nth-child(2){
-    background: #dc7657f5;
-}
+/*.grid-item:nth-child(2){*/
+/*    background: #dc7657f5;*/
+/*}*/
 
-.grid-item:nth-child(3){
-    background: #4bb3c1fa;
-}
+/*.grid-item:nth-child(3){*/
+/*    background: #4bb3c1fa;*/
+/*}*/
 
-.grid-item:nth-child(4){
-    background: #fac069f9;
-}
+/*.grid-item:nth-child(4){*/
+/*    background: #fac069f9;*/
+/*}*/
 
-.grid-item:nth-child(5){
-    background: #67a866f9;
-}
+/*.grid-item:nth-child(5){*/
+/*    background: #67a866f9;*/
+/*}*/
 
-.grid-item:nth-child(6){
-    background: #b94169fa;
-}
+/*.grid-item:nth-child(6){*/
+/*    background: #b94169fa;*/
+/*}*/
 
-.grid-item:nth-child(7){
-    background: #7f62b3fa;
-}
+/*.grid-item:nth-child(7){*/
+/*    background: #7f62b3fa;*/
+/*}*/
 
-.grid-item:nth-child(8){
-    background: #9fc376f9;
-}
+/*.grid-item:nth-child(8){*/
+/*    background: #9fc376f9;*/
+/*}*/
 
-.grid-item:nth-child(9){
-    background: #677bcbfa;
-}
+/*.grid-item:nth-child(9){*/
+/*    background: #677bcbfa;*/
+/*}*/
 
 @media (min-width: 550px) {
     #grid div {
@@ -107,8 +108,8 @@ p {
     background: rgba(000,000,000, .3);
     position: absolute;
     bottom: 0;
-    width: 100%;
-    padding: 0.8em 0.8em 1.8em;
+    width: 50%;
+    /*padding: 0.8em 0.8em 1.8em;*/
     margin:0;
     box-sizing: border-box;
     font-size: 1.2em;
@@ -174,16 +175,23 @@ select {
 }
 
 
-/* Grid styles */
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-}
+ /*Grid styles*/
+/*:root {*/
+/*    --grid-cols: 1;*/
+/*    --grid-rows: 1;*/
+/*}*/
 
-
+/*#grid {*/
+/*    display: grid;*/
+/*    grid-gap: 1em;*/
+/*    grid-template-rows: repeat(var(--grid-rows), 1fr);*/
+/*    grid-template-columns: repeat(var(--grid-cols), 1fr);*/
+/*}*/
 
 .grid-item {
-    padding: 1em;
+    padding: 10em;
     border: 1px solid #ddd;
     text-align: center;
+    /*vertical-align: bottom;*/
+    background-size: 100%;
 }
