@@ -16,27 +16,26 @@
 <body>
     <header>
         <h1>Dinosaurs</h1>
-        <h3>Compare yourselft with dinos</h3>
+        <h3>Compare yourself with dinos</h3>
     </header>
 
     <!-- Form to get user input -->
     <div class="form-container">
-        <form action="dino-user-input">
+        <form>
             <p>Name:</p>
             <input id="name" type="name" name="name">
             <p>Height</p>
-            <label><input id="feet" class="form-field__short" type="cm" name="cm">cm</label>
+            <label><input id="height" class="form-field__short" type="number" name="height">cm</label>
             <p>Weight:</p>
-            <label><input id="weight" class="form-field__full" type="number" name="weight">kg</label>
+            <label><input id="weight" class="form-field__short" type="number" name="weight">kg</label>
             <p>Diet:</p>
             <select id="diet" class="form-field__full" name="diet">
                 <option>Herbavor</option>
                 <option>Omnivor</option>
                 <option>Carnivor</option>
             </select>
-
-
         </form>
+        <button onclick="showGrid()">Compare</button>
     </div>
     <!-- .grid to attach tiles to -->
     <main id="grid"></main>

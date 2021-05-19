@@ -172,3 +172,18 @@ select {
     display: block;
     font-size: 0.7em;
 }
+
+
+/* Grid styles */
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
